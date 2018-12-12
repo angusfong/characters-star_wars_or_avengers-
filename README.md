@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 # AWESOME Character-level Neural Networks
 A collection of references on character-level neural networks
 
