@@ -36,10 +36,10 @@ Character-level neural networks have risen in popularity in the last four years.
 
 ## Papers
 
-###Theory
+### Theory
 * Character-level Recurrent Neural Networks in Practice: Comparing Training and Sampling Schemes [[paper](https://arxiv.org/abs/1801.00632)]
 
-###Language modeling
+### Language modeling
 * Character-Aware Neural Language Models [[paper](https://arxiv.org/pdf/1508.06615.pdf)]
     + \underline{Highlight:} Word-level language models do not handle out-of-vocabulary (OOV) words, and their parameter count scales with the number of words. Kim et. al. remove the need of a vocabulary by using purely character-level inputs. It uses a CNN combined with a highway layer to obtain word embeddings, which is fed into a standard LSTM language model. Model perplexity on various datasets, especially in morphologically rich languages, were on par with state-of-the-art despite using much less parameters. 
 
