@@ -41,11 +41,11 @@ Character-level neural networks have risen in popularity in the last four years.
 
 ### Language modeling
 * Character-Aware Neural Language Models [[paper](https://arxiv.org/pdf/1508.06615.pdf)]
-    + \emph{Highlight:} Word-level language models do not handle out-of-vocabulary (OOV) words, and their parameter count scales with the number of words. Kim et. al. remove the need of a vocabulary by using purely character-level inputs. It uses a CNN combined with a highway layer to obtain word embeddings, which is fed into a standard LSTM language model. Model perplexity on various datasets, especially in morphologically rich languages, were on par with state-of-the-art despite using much less parameters. 
+    + *Highlight:* Word-level language models do not handle out-of-vocabulary (OOV) words, and their parameter count scales with the number of words. Kim et. al. remove the need of a vocabulary by using purely character-level inputs. It uses a CNN combined with a highway layer to obtain word embeddings, which is fed into a standard LSTM language model. Model perplexity on various datasets, especially in morphologically rich languages, were on par with state-of-the-art despite using much less parameters. 
 
 * Character-Level Language Modeling with Hierarchical Recurrent Neural Networks (2016) [[paper](https://arxiv.org/abs/1609.03777)]
 
-    + \emph{Highlight:} Hwang et. al. model language one letter at a time, but as informed by word-level contextual information. To do this, "hierarchical RNN's" are introduced in which an LSTM with a slower clock (word) resets an LSTM with a faster clock (character), allowing a confluence of information between short-term details and long-range dependencies to optimally predict a character sequence. This results in a much reduced parameter count, while model perplexity remains competitive. Applications for automatic speech recognition are discussed.
+    + *Highlight:* Hwang et. al. model language one letter at a time, but as informed by word-level contextual information. To do this, "hierarchical RNN's" are introduced in which an LSTM with a slower clock (word) resets an LSTM with a faster clock (character), allowing a confluence of information between short-term details and long-range dependencies to optimally predict a character sequence. This results in a much reduced parameter count, while model perplexity remains competitive. Applications for automatic speech recognition are discussed.
 
 ### POS tagging
 * Learning Character-level Representations for Part-of-Speech Tagging (JMLR 2014) [[paper](http://proceedings.mlr.press/v32/santos14.pdf)]
@@ -64,7 +64,7 @@ Character-level neural networks have risen in popularity in the last four years.
 
 ### Machine translation
 * Fully Character-Level Neural Machine Translation without Explicit Segmentation (TACL 2017) [[paper](https://arxiv.org/abs/1610.03017)]
-    + \emph{Highlight:} By going to the character level, Lee et. al. address the need to remove a fixed-size vocabulary for machine translation, which is necessary for languages such as Czech and Turkish, which are built upon morphological inflexions. The need to segment text into word tokens is also removed. A new encoder-decoder with attention built on a CNN is proposed. This character-level model for both source comprehension and target generation outperforms strong subword- and word-level baselines. Multilingual translation outperformed bilingual translation, motivating future translation models to take a universal, crosslingual approach using character inputs.
+    + *Highlight:* By going to the character level, Lee et. al. address the need to remove a fixed-size vocabulary for machine translation, which is necessary for languages such as Czech and Turkish, which are built upon morphological inflexions. The need to segment text into word tokens is also removed. A new encoder-decoder with attention built on a CNN is proposed. This character-level model for both source comprehension and target generation outperforms strong subword- and word-level baselines. Multilingual translation outperformed bilingual translation, motivating future translation models to take a universal, crosslingual approach using character inputs.
 
 * Character-based neural machine translation (ICLR 2016) [[paper](https://arxiv.org/abs/1511.04586)]
 
@@ -75,4 +75,4 @@ Character-level neural networks have risen in popularity in the last four years.
 
 ### Text classification
 * Character-level Convolutional Networks for Text Classification (NIPS 2015) [[paper](https://arxiv.org/abs/1509.01626)]
-    + \emph{Highlight:} This work attempts to understand text from scratch, without prior semantic or syntactical knowledge. An end-to-end CNN that reads input text character-by-character is trained to perform tasks such as sentiment and topic classification. Compared with previous word-level models, this CNN does better on larger datasets. Across a variety of tasks, fully character-level demonstrate discriminative text understanding.
+    + *Highlight:* This work attempts to understand text from scratch, without prior semantic or syntactical knowledge. An end-to-end CNN that reads input text character-by-character is trained to perform tasks such as sentiment and topic classification. Compared with previous word-level models, this CNN does better on larger datasets. Across a variety of tasks, fully character-level demonstrate discriminative text understanding.
